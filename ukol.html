@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firemní Web</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f4f4f4; color: #333; line-height: 1.6; }
+        
+        header { background: #34495E; padding: 20px 0; color: white; }
+        header .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header .logo { font-size: 24px; font-weight: bold; color: #E67E22; }
+        header nav a { color: white; margin: 0 10px; text-decoration: none; font-size: 16px; }
+        header nav a:hover { background: #2C3E50; padding: 5px; border-radius: 5px; }
+        header .search input { padding: 5px; border-radius: 5px; border: 1px solid #ccc; }
+
+        .hero { background: #34495E; color: white; text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 18px; margin-bottom: 30px; }
+        .hero .button { background: #E67E22; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; }
+        .hero .button:hover { background: #D35400; }
+
+        .services { background: #ecf0f1; padding: 60px 20px; text-align: center; }
+        .services h2 { font-size: 2.5em; color: #34495E; margin-bottom: 20px; }
+        .service-items { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .service-item { background: white; padding: 30px; width: 220px; margin: 10px; border-radius: 5px; transition: transform 0.3s; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
+        .service-item:hover { transform: scale(1.05); }
+        .service-item h3 { color: #34495E; margin-top: 10px; }
+
+        .portfolio { background: #2C3E50; color: white; padding: 60px 20px; text-align: center; }
+        .portfolio h2 { font-size: 2.5em; color: #E67E22; margin-bottom: 30px; }
+        .portfolio-items { display: flex; justify-content: space-around; margin-bottom: 30px; }
+        .portfolio-item { background: #34495E; width: 260px; height: 200px; display: flex; justify-content: center; align-items: center; border-radius: 5px; color: white; font-size: 18px; }
+        .portfolio .button { background: #E67E22; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; }
+        .portfolio .button:hover { background: #D35400; }
+
+        .testimonials { background: #ecf0f1; padding: 40px 20px; text-align: center; }
+        .testimonials h3 { font-size: 2em; color: #34495E; margin-bottom: 20px; }
+        .testimonial-content { font-style: italic; margin-bottom: 20px; }
+        .testimonial-author { font-weight: bold; }
+        .testimonial-position { color: #E67E22; }
+
+        footer { background: #34495E; color: white; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Vaše Logo</div>
+            <nav>
+                <a href="#">Domů</a>
+                <a href="#">Portfolio</a>
+                <a href="#">O nás</a>
+                <a href="#">Kontakt</a>
+                <a href="#" class="blog-button">Blog</a>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Hledat...">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Dobré designy jsou dobrý byznys</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="button">Zjistit více</a>
+    </section>
+
+    <section class="services">
+        <h2>Naše služby</h2>
+        <div class="service-items">
+            <div class="service-item">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service-item">
+                <h3>Optimalizace</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service-item">
+                <h3>Online obchod</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service-item">
+                <h3>Sociální média</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Ukázky portfolia</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">Projekt 1</div>
+            <div class="portfolio-item">Projekt 2</div>
+            <div class="portfolio-item">Projekt 3</div>
+        </div>
+        <a href="#" class="button">Více projektů</a>
+    </section>
+
+    <section class="testimonials">
+        <h3>Reference</h3>
+        <p class="testimonial-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        <p class="testimonial-author">Jan Novák</p>
+        <p class="testimonial-position">CEO společnosti XYZ</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vaše Společnost</p>
+    </footer>
+</body>
+</html>
